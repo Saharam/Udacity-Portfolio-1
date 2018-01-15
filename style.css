@@ -1,211 +1,253 @@
-  html {
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto','Open Sans', sans-serif;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2em;
+}
+
+.container {
+  flex: 6;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8vh;
+  padding-left: 14%;
+}
+
+.logo {
+  width: 7%;
+  height: 7%;
   }
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    margin: 0;
-    padding: 2em;
-  }
-  .container {
-    flex: 6;
-  }
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 8vh;
-    padding-left: 14%;
-  }
-  .logo {
-    width: 7%;
-    height: 7%;
-  }
-  .name {
-    text-align: right;
-    line-height: 25px;
-    padding-right: 6vw;
-    color: #8f9399;
-  }
-  header h1 {
-    font-size: 1.75em;
-    font-weight: lighter;
-  }
-  header h2 {
-    font-size: 1em;
-    font-weight: lighter;
-  }
-  .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-    flex: 3;
-    min-height: 60vh;
-  }
-  .image {
-    width: 1250px;
-    height: auto;
-    border-top: 2px solid lightgrey;
-    padding-top: 5vh;
-    max-width: 90%;
-  }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    margin-top: -2vh;
-  }
-  .svg1  {
-    fill: #02b3e4;
-  }
-  .svg2  {
-    fill: #2d3c49;
-  }
-  .svg3  {
-    fill: #7d97ad;
-  }
-  .fig-p {
-    text-align: center;
-    margin-left: 2vw;
-    color: #8f9399;
-  }
-  .navbar {
-    display: flex;
-    width: 5em;
-  }
-  footer {
-    flex-direction: column;
-    margin-top: 6vh;
-  }
-  footer h1 {
-    font-size: 1.5em;
-    text-align: left;
-    margin-top: 5vh;
-    margin-left: 14vw;
-    color: #8f9399;
-    font-weight: lighter;
-  }
-  .inside {
-    display: flex;
-    list-style: none;
-    padding-left: 9vw;
-    padding-top: 3vh;
-    text-align: center;
-  }
-  .media {
-    max-width: 70%;
-  }
-  .inside li h2 {
-    font-size: 1em;
-    font-weight: lighter;
-    color: #8f9399;
-  }
-  a {
-    text-align: center;
-    font-size: 0.80em;
-  }
+
+.name-position {
+  text-align: right;
+  line-height: 25px;
+  padding-right: 6vw;
+  color: #8f9399;
+}
+
+#header-1 {
+  font-size: 1.75em;
+  font-weight: lighter;
+}
+
+#header-2 {
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  min-height: 60vh;
+}
+
+.banner {
+  height: auto;
+  max-width: 100%;
+  border-top: 2px solid lightgrey;
+  padding-top: 5vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.svg-1  {
+  fill: #02b3e4;
+}
+
+.svg-2  {
+  fill: #2d3c49;
+}
+
+.svg-3  {
+  fill: #7d97ad;
+}
+
+.fig-p {
+  text-align: center;
+  margin-left: 3%;
+  color: #8f9399;
+}
+
+.navbar {
+  display: flex;
+  width: 3em;
+}
+
+section {
+  flex-direction: column;
+  margin-top: 6vh;
+}
+
+.work {
+  font-size: 1.5em;
+  text-align: left;
+  margin-top: 5vh;
+  margin-left: 14vw;
+  color: #8f9399;
+  font-weight: lighter;
+}
+
+.inside {
+  display: flex;
+  list-style: none;
+  padding-left: 9vw;
+  padding-top: 3vh;
+  text-align: center;
+}
+
+.media {
+  max-width: 70%;
+}
+
+.inside li h2 {
+  font-size: 1em;
+  font-weight: lighter;
+  color: #8f9399;
+}
+
+a {
+  text-align: center;
+  font-size: 0.80em;
+}
 
 /*MOBILE*/
 @media screen and (max-width: 450px) {
 
-header {
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 0;
-}
-.name {
-  text-align: center;
-  padding: 0;
-}
-.logo {
-  max-width: 100%;
-}
-.image {
-  padding-top: 7vh;
-  max-width: 100%;
-}
-.content {
-  flex-flow: column-reverse wrap;
-  padding: 2em;
-}
-.sidebar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0;
-  padding-right: 6vw;
+  .container {
+    max-width: 100%;
   }
-.inside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-.inside li {
-  padding: 1em;
-  margin: 1em;
-}
-a {
-  text-align: center;
-  font-size: 0.85em;
-}
-footer {
-  max-width: 1250px;
-  height: 50vh;
-  margin-top: 5vh;
-}
-footer h1 {
-  font-weight: lighter;
-  padding-right: 9%;
-  text-align: center;
-}
-li h2 {
-  text-align: center;
-  color: #8f9399;
-  font-size: 1em;
-}
+  header {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .name-position {
+    text-align: center;
+    padding: 0;
+  }
+
+  .logo {
+    max-width: 100%;
+  }
+
+  .banner {
+    padding-top: 7vh;
+    max-width: 100%;
+    align-self: stretch;
+  }
+
+  .content {
+    flex-flow: column-reverse wrap;
+    padding: 2em;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .inside li {
+    padding: 1em;
+    margin: 1em;
+  }
+
+  a {
+    text-align: center;
+    font-size: 0.85em;
+  }
+
+  section {
+    height: 50vh;
+    margin-top: 5vh;
+  }
+
+  .work {
+    font-size: 1em;
+    font-weight: lighter;
+    padding-right: 16%;
+    text-align: center;
+  }
+
+  li h2 {
+    text-align: center;
+    color: #8f9399;
+    font-size: 1em;
+  }
 }
 
 /*IPAD*/
 @media (min-width: 1000px){
-  .container {
-    width: 1000px;
+  .content {
     max-width: 100%;
   }
+
   header {
     padding-left: 18%;
   }
-  .name {
+
+  .name-position {
     padding-right: 3vw;
   }
-  footer h1 {
+
+  .work {
+    font-size: 1em;
     margin-left: 16.5vw;
   }
+
   .inside {
-    padding-left: 14%;
-  }
+    padding-left: 13%;
+    justify-content: center;
+ }
+
 }
 
 
 /*Desktop*/
 @media (min-width: 1250px) {
-  .container {
-    max-width: 1250;
+  .content {
+    max-width: 100%;
   }
+
   header {
     padding-left: 14%;
   }
-  .name {
+
+  .name-position {
     padding-right: 5vw;
   }
-  footer h1 {
+
+  .work {
+    font-size: 1.25em;
     margin-left: 13.5vw;
   }
+
   .inside {
     padding-left: 9%;
   }
