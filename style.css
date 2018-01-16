@@ -58,7 +58,6 @@ header {
   max-width: 100%;
   border-top: 2px solid lightgrey;
   padding-top: 5vh;
-  align-self: stretch;
 }
 
 .sidebar {
@@ -242,7 +241,7 @@ a {
   .banner {
     width: 1250px;
   }
-  
+
   .name-position {
     padding-right: 5vw;
   }
