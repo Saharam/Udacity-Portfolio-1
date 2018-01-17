@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto','Open Sans', sans-serif;
+  font-family: 'Open Sans','Roboto', sans-serif;
   display: flex;
   flex-direction: row;
   min-height: 100vh;
@@ -27,7 +27,7 @@ header {
 .logo {
   width: 7%;
   height: 7%;
-  }
+}
 
 .name-position {
   text-align: right;
@@ -36,12 +36,12 @@ header {
   color: #8f9399;
 }
 
-#header-1 {
+.header-1 {
   font-size: 1.75em;
   font-weight: lighter;
 }
 
-#header-2 {
+.header-2 {
   font-size: 1em;
   font-weight: lighter;
 }
@@ -57,30 +57,39 @@ header {
   height: auto;
   max-width: 100%;
   border-top: 2px solid lightgrey;
-  padding-top: 5vh;
+  padding-top: 6vh;
+  align-self: center;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  margin-right: 4%;
 }
 
-.svg-1  {
-  fill: #02b3e4;
-}
-
-.svg-2  {
-  fill: #2d3c49;
-}
-
-.svg-3  {
-  fill: #7d97ad;
-}
-
-.fig-p {
+.p-square {
   text-align: center;
   margin-left: 3%;
   color: #8f9399;
+}
+
+.square-1 {
+	width: 80px;
+	height: 80px;
+  background: #02b3e4;
+}
+
+.square-2 {
+  width: 80px;
+	height: 80px;
+  background: #2d3c49;
+}
+
+.square-3 {
+  width: 80px;
+	height: 80px;
+  background: #7d97ad;
 }
 
 .navbar {
@@ -94,12 +103,12 @@ section {
 }
 
 .work {
-  font-size: 1.5em;
+  font-size: 1.75em;
+  font-weight: lighter;
   text-align: left;
   margin-top: 5vh;
   margin-left: 14vw;
   color: #8f9399;
-  font-weight: lighter;
 }
 
 .inside {
@@ -131,6 +140,7 @@ a {
   .container {
     max-width: 100%;
   }
+
   header {
     max-height: 100%;
     display: flex;
@@ -154,21 +164,24 @@ a {
 
   .content {
     flex-flow: column-reverse wrap;
-    padding: 2em;
+    padding: 1em;
   }
 
   .sidebar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 0;
+    margin: 0.5em;
+    padding: 0;
+  }
+
+  .sidebar li {
+    padding: 1em;
   }
 
   .inside {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 0;
   }
 
@@ -188,7 +201,7 @@ a {
   }
 
   .work {
-    font-size: 1em;
+    font-size: 1.75em;
     font-weight: lighter;
     padding-right: 16%;
     text-align: center;
@@ -203,6 +216,7 @@ a {
 
 /*IPAD*/
 @media (min-width: 1000px){
+
   .content {
     max-width: 100%;
   }
@@ -216,12 +230,11 @@ a {
   }
 
   .work {
-    font-size: 1em;
     margin-left: 16.5vw;
   }
 
   .inside {
-    padding-left: 13%;
+    padding-left: 14%;
     justify-content: center;
  }
 
@@ -230,6 +243,7 @@ a {
 
 /*Desktop*/
 @media (min-width: 1250px) {
+  
   .content {
     max-width: 100%;
   }
@@ -240,6 +254,7 @@ a {
 
   .banner {
     width: 1250px;
+    height: 500px;
   }
 
   .name-position {
@@ -247,11 +262,11 @@ a {
   }
 
   .work {
-    font-size: 1.25em;
-    margin-left: 13.5vw;
+    font-weight: lighter;
+    margin-left: 15vw;
   }
 
   .inside {
-    padding-left: 9%;
+    padding-left: 11%;
   }
 }
